@@ -3,3 +3,4 @@
 
 CMakeFiles/optimizer.dir/4_rosenbrock.cpp.o
  /home/sdg/catkin_ws/test/test_casadi/4_rosenbrock.cpp
+ /home/sdg/catkin_ws/test/test_casadi/rosenbrock.h

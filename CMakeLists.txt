@@ -5,6 +5,8 @@ set(CMAKE_CXX_STANDARD 17)
 project(casadi_optimization)
 
 find_package(PkgConfig REQUIRED)
+pkg_check_modules(MATIO REQUIRED matio)
+
 link_directories(/usr/lib/x86_64-linux-gnu/hdf5/serial)
 
 add_executable(optimizer 4_rosenbrock.cpp)

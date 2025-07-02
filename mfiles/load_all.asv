@@ -1,0 +1,11 @@
+function load_all(dataFile1,dataFile2)
+    global XX YY ZZ x_opt y_opt;
+
+    data1 = load("mat/"dataFile1);  % Loads XX, YY, ZZ
+    XX = data1.XX;
+    YY = data1.YY;
+    ZZ = data1.ZZ;
+    data2 = load(dataFile2);  % Loads x_opt, y_opt
+    x_opt = data2.x_opt;
+    y_opt = data2.y_opt;
+end

@@ -7,6 +7,10 @@
 #IncludeRegexTransform: 
 
 /home/sdg/catkin_ws/test/test_casadi/4_rosenbrock.cpp
+rosenbrock.h
+/home/sdg/catkin_ws/test/test_casadi/rosenbrock.h
+
+/home/sdg/catkin_ws/test/test_casadi/rosenbrock.h
 casadi/casadi.hpp
 -
 matio.h
