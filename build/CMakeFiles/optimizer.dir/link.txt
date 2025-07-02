@@ -1,1 +1,1 @@
-/usr/bin/c++    -rdynamic CMakeFiles/optimizer.dir/4_race_car_multiple_shooting.cpp.o  -o optimizer   -L/usr/lib/x86_64-linux-gnu/hdf5/serial  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/hdf5/serial -lmatio -lhdf5 -lz -lcasadi -lhdf5 -lz -lcasadi 
+/usr/bin/c++    -rdynamic CMakeFiles/optimizer.dir/casadi_api_a_test/casadi_api_a_test.cpp.o  -o optimizer   -L/home/sdg/catkin_ws/test/test_casadi/casadi_api_a_test  -Wl,-rpath,/home/sdg/catkin_ws/test/test_casadi/casadi_api_a_test -lpgd_fun 

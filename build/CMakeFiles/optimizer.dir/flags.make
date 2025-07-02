@@ -6,5 +6,5 @@ CXX_FLAGS =   -std=gnu++17
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/lib/x86_64-linux-gnu/hdf5/serial/include 
+CXX_INCLUDES = -I/usr/include/eigen3 
 

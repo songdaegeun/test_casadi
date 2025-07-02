@@ -123,32 +123,32 @@ optimizer/fast:
 	$(MAKE) -f CMakeFiles/optimizer.dir/build.make CMakeFiles/optimizer.dir/build
 .PHONY : optimizer/fast
 
-4_race_car_multiple_shooting.o: 4_race_car_multiple_shooting.cpp.o
+casadi_api_a_test/casadi_api_a_test.o: casadi_api_a_test/casadi_api_a_test.cpp.o
 
-.PHONY : 4_race_car_multiple_shooting.o
+.PHONY : casadi_api_a_test/casadi_api_a_test.o
 
 # target to build an object file
-4_race_car_multiple_shooting.cpp.o:
-	$(MAKE) -f CMakeFiles/optimizer.dir/build.make CMakeFiles/optimizer.dir/4_race_car_multiple_shooting.cpp.o
-.PHONY : 4_race_car_multiple_shooting.cpp.o
+casadi_api_a_test/casadi_api_a_test.cpp.o:
+	$(MAKE) -f CMakeFiles/optimizer.dir/build.make CMakeFiles/optimizer.dir/casadi_api_a_test/casadi_api_a_test.cpp.o
+.PHONY : casadi_api_a_test/casadi_api_a_test.cpp.o
 
-4_race_car_multiple_shooting.i: 4_race_car_multiple_shooting.cpp.i
+casadi_api_a_test/casadi_api_a_test.i: casadi_api_a_test/casadi_api_a_test.cpp.i
 
-.PHONY : 4_race_car_multiple_shooting.i
+.PHONY : casadi_api_a_test/casadi_api_a_test.i
 
 # target to preprocess a source file
-4_race_car_multiple_shooting.cpp.i:
-	$(MAKE) -f CMakeFiles/optimizer.dir/build.make CMakeFiles/optimizer.dir/4_race_car_multiple_shooting.cpp.i
-.PHONY : 4_race_car_multiple_shooting.cpp.i
+casadi_api_a_test/casadi_api_a_test.cpp.i:
+	$(MAKE) -f CMakeFiles/optimizer.dir/build.make CMakeFiles/optimizer.dir/casadi_api_a_test/casadi_api_a_test.cpp.i
+.PHONY : casadi_api_a_test/casadi_api_a_test.cpp.i
 
-4_race_car_multiple_shooting.s: 4_race_car_multiple_shooting.cpp.s
+casadi_api_a_test/casadi_api_a_test.s: casadi_api_a_test/casadi_api_a_test.cpp.s
 
-.PHONY : 4_race_car_multiple_shooting.s
+.PHONY : casadi_api_a_test/casadi_api_a_test.s
 
 # target to generate assembly for a file
-4_race_car_multiple_shooting.cpp.s:
-	$(MAKE) -f CMakeFiles/optimizer.dir/build.make CMakeFiles/optimizer.dir/4_race_car_multiple_shooting.cpp.s
-.PHONY : 4_race_car_multiple_shooting.cpp.s
+casadi_api_a_test/casadi_api_a_test.cpp.s:
+	$(MAKE) -f CMakeFiles/optimizer.dir/build.make CMakeFiles/optimizer.dir/casadi_api_a_test/casadi_api_a_test.cpp.s
+.PHONY : casadi_api_a_test/casadi_api_a_test.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... optimizer"
-	@echo "... 4_race_car_multiple_shooting.o"
-	@echo "... 4_race_car_multiple_shooting.i"
-	@echo "... 4_race_car_multiple_shooting.s"
+	@echo "... casadi_api_a_test/casadi_api_a_test.o"
+	@echo "... casadi_api_a_test/casadi_api_a_test.i"
+	@echo "... casadi_api_a_test/casadi_api_a_test.s"
 .PHONY : help
 
 

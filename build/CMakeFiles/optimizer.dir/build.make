@@ -57,27 +57,27 @@ include CMakeFiles/optimizer.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/optimizer.dir/flags.make
 
-CMakeFiles/optimizer.dir/4_race_car_multiple_shooting.cpp.o: CMakeFiles/optimizer.dir/flags.make
-CMakeFiles/optimizer.dir/4_race_car_multiple_shooting.cpp.o: ../4_race_car_multiple_shooting.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sdg/catkin_ws/test/test_casadi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/optimizer.dir/4_race_car_multiple_shooting.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/optimizer.dir/4_race_car_multiple_shooting.cpp.o -c /home/sdg/catkin_ws/test/test_casadi/4_race_car_multiple_shooting.cpp
+CMakeFiles/optimizer.dir/casadi_api_a_test/casadi_api_a_test.cpp.o: CMakeFiles/optimizer.dir/flags.make
+CMakeFiles/optimizer.dir/casadi_api_a_test/casadi_api_a_test.cpp.o: ../casadi_api_a_test/casadi_api_a_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sdg/catkin_ws/test/test_casadi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/optimizer.dir/casadi_api_a_test/casadi_api_a_test.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/optimizer.dir/casadi_api_a_test/casadi_api_a_test.cpp.o -c /home/sdg/catkin_ws/test/test_casadi/casadi_api_a_test/casadi_api_a_test.cpp
 
-CMakeFiles/optimizer.dir/4_race_car_multiple_shooting.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/optimizer.dir/4_race_car_multiple_shooting.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sdg/catkin_ws/test/test_casadi/4_race_car_multiple_shooting.cpp > CMakeFiles/optimizer.dir/4_race_car_multiple_shooting.cpp.i
+CMakeFiles/optimizer.dir/casadi_api_a_test/casadi_api_a_test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/optimizer.dir/casadi_api_a_test/casadi_api_a_test.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sdg/catkin_ws/test/test_casadi/casadi_api_a_test/casadi_api_a_test.cpp > CMakeFiles/optimizer.dir/casadi_api_a_test/casadi_api_a_test.cpp.i
 
-CMakeFiles/optimizer.dir/4_race_car_multiple_shooting.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/optimizer.dir/4_race_car_multiple_shooting.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sdg/catkin_ws/test/test_casadi/4_race_car_multiple_shooting.cpp -o CMakeFiles/optimizer.dir/4_race_car_multiple_shooting.cpp.s
+CMakeFiles/optimizer.dir/casadi_api_a_test/casadi_api_a_test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/optimizer.dir/casadi_api_a_test/casadi_api_a_test.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sdg/catkin_ws/test/test_casadi/casadi_api_a_test/casadi_api_a_test.cpp -o CMakeFiles/optimizer.dir/casadi_api_a_test/casadi_api_a_test.cpp.s
 
 # Object files for target optimizer
 optimizer_OBJECTS = \
-"CMakeFiles/optimizer.dir/4_race_car_multiple_shooting.cpp.o"
+"CMakeFiles/optimizer.dir/casadi_api_a_test/casadi_api_a_test.cpp.o"
 
 # External object files for target optimizer
 optimizer_EXTERNAL_OBJECTS =
 
-optimizer: CMakeFiles/optimizer.dir/4_race_car_multiple_shooting.cpp.o
+optimizer: CMakeFiles/optimizer.dir/casadi_api_a_test/casadi_api_a_test.cpp.o
 optimizer: CMakeFiles/optimizer.dir/build.make
 optimizer: CMakeFiles/optimizer.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sdg/catkin_ws/test/test_casadi/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable optimizer"
