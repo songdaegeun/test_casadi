@@ -1,9 +1,16 @@
 cmake_minimum_required(VERSION 3.0)
+
+set(CMAKE_CXX_STANDARD 17)
+
 project(casadi_optimization)
 
-add_executable(optimizer 4_rosenbrock.cpp)
-target_link_libraries(optimizer casadi)
 
-# message(STATUS "CASADI_INCLUDE_DIRS = ${CASADI_INCLUDE_DIRS}")
-# message(STATUS "CASADI_LIBRARIES = ${CASADI_LIBRARIES}")
+find_package(PkgConfig REQUIRED)
+link_directories(/usr/lib/x86_64-linux-gnu/hdf5/serial)
+
+add_executable(optimizer 4_rosenbrock.cpp)
+
+target_include_directories(optimizer PRIVATE ${MATIO_INCLUDE_DIRS})
+target_link_libraries(optimizer PRIVATE ${MATIO_LIBRARIES} casadi hdf5)
+
 

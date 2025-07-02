@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/optimizer.dir/4_rosenbrock.cpp.o"
-  "CMakeFiles/optimizer.dir/4_rosenbrock.cpp.o.d"
   "optimizer"
   "optimizer.pdb"
 )
