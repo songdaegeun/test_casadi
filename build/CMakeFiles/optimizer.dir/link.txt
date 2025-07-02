@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/optimizer.dir/4_rosenbrock.cpp.o  -o optimizer  -lcasadi 
