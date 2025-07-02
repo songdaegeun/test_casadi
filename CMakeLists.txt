@@ -9,7 +9,7 @@ pkg_check_modules(MATIO REQUIRED matio)
 
 link_directories(/usr/lib/x86_64-linux-gnu/hdf5/serial)
 
-add_executable(optimizer 4_rosenbrock.cpp)
+add_executable(optimizer 4_race_car_multiple_shooting.cpp)
 
 target_include_directories(optimizer PRIVATE ${MATIO_INCLUDE_DIRS})
 target_link_libraries(optimizer PRIVATE ${MATIO_LIBRARIES} casadi hdf5)

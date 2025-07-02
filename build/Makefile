@@ -123,32 +123,32 @@ optimizer/fast:
 	$(MAKE) -f CMakeFiles/optimizer.dir/build.make CMakeFiles/optimizer.dir/build
 .PHONY : optimizer/fast
 
-4_rosenbrock.o: 4_rosenbrock.cpp.o
+4_race_car_multiple_shooting.o: 4_race_car_multiple_shooting.cpp.o
 
-.PHONY : 4_rosenbrock.o
+.PHONY : 4_race_car_multiple_shooting.o
 
 # target to build an object file
-4_rosenbrock.cpp.o:
-	$(MAKE) -f CMakeFiles/optimizer.dir/build.make CMakeFiles/optimizer.dir/4_rosenbrock.cpp.o
-.PHONY : 4_rosenbrock.cpp.o
+4_race_car_multiple_shooting.cpp.o:
+	$(MAKE) -f CMakeFiles/optimizer.dir/build.make CMakeFiles/optimizer.dir/4_race_car_multiple_shooting.cpp.o
+.PHONY : 4_race_car_multiple_shooting.cpp.o
 
-4_rosenbrock.i: 4_rosenbrock.cpp.i
+4_race_car_multiple_shooting.i: 4_race_car_multiple_shooting.cpp.i
 
-.PHONY : 4_rosenbrock.i
+.PHONY : 4_race_car_multiple_shooting.i
 
 # target to preprocess a source file
-4_rosenbrock.cpp.i:
-	$(MAKE) -f CMakeFiles/optimizer.dir/build.make CMakeFiles/optimizer.dir/4_rosenbrock.cpp.i
-.PHONY : 4_rosenbrock.cpp.i
+4_race_car_multiple_shooting.cpp.i:
+	$(MAKE) -f CMakeFiles/optimizer.dir/build.make CMakeFiles/optimizer.dir/4_race_car_multiple_shooting.cpp.i
+.PHONY : 4_race_car_multiple_shooting.cpp.i
 
-4_rosenbrock.s: 4_rosenbrock.cpp.s
+4_race_car_multiple_shooting.s: 4_race_car_multiple_shooting.cpp.s
 
-.PHONY : 4_rosenbrock.s
+.PHONY : 4_race_car_multiple_shooting.s
 
 # target to generate assembly for a file
-4_rosenbrock.cpp.s:
-	$(MAKE) -f CMakeFiles/optimizer.dir/build.make CMakeFiles/optimizer.dir/4_rosenbrock.cpp.s
-.PHONY : 4_rosenbrock.cpp.s
+4_race_car_multiple_shooting.cpp.s:
+	$(MAKE) -f CMakeFiles/optimizer.dir/build.make CMakeFiles/optimizer.dir/4_race_car_multiple_shooting.cpp.s
+.PHONY : 4_race_car_multiple_shooting.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... optimizer"
-	@echo "... 4_rosenbrock.o"
-	@echo "... 4_rosenbrock.i"
-	@echo "... 4_rosenbrock.s"
+	@echo "... 4_race_car_multiple_shooting.o"
+	@echo "... 4_race_car_multiple_shooting.i"
+	@echo "... 4_race_car_multiple_shooting.s"
 .PHONY : help
 
 

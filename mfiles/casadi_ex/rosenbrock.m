@@ -2,9 +2,6 @@ clc
 clear all
 close all
 
-import casadi.*
-
-
 %% Set up optimization environment
 opti = casadi.Opti();
 
