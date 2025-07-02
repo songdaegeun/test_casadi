@@ -6,6 +6,7 @@
 
 std::pair<casadi::DM, casadi::DM> meshgrid(const casadi::DM& x, const casadi::DM& y);
 void save_matlab_data(const casadi::DM& XX, const casadi::DM& YY, const casadi::DM& ZZ, double x_opt, double y_opt);
+void make_matlab_script( );
 
 int main() {
     casadi::Opti opti;
@@ -14,6 +15,7 @@ int main() {
     casadi::MX y = opti.variable();
     // 목적 함수: Rosenbrock
     opti.minimize(pow(1 - x, 2) + pow(y - x * x, 2));
+    // opti.subject_to(x*x+y*y<=1);
 
     opti.solver("ipopt");
 
@@ -22,34 +24,13 @@ int main() {
     double x_opt = sol.value(x).scalar();
     double y_opt = sol.value(y).scalar();
 
-    // std::cout << "x_opt: " << x_opt << std::endl;
-    // std::cout << "y_opt: " << y_opt << std::endl;
-
     casadi::DM X = casadi::DM::linspace(-2, 2, 100);
     casadi::DM Y = casadi::DM::linspace(-2, 2, 100);
     auto [XX, YY] = meshgrid(X, Y);
     casadi::DM ZZ = (1-XX)*(1-XX) + (YY-XX*XX)*(YY-XX*XX);
 
-    // std::cout << "XX.shape: " << XX.size1() << " " << XX.size2() << std::endl;
-    // std::cout << "YY.shape: " << YY.size1() << " " << YY.size2() << std::endl;
-    // std::cout << "ZZ.shape: " << ZZ.size1() << " " << ZZ.size2() << std::endl;
-
     save_matlab_data(XX, YY, ZZ, x_opt, y_opt);
-
-    // // 파일 열기
-    // std::ofstream file("../mfiles/rosenbrock_result.m");
-    // file << "% Rosenbrock contour plot\n";
-
-    // // 4. 나머지 시각화 코드
-    // file << "figure;\n";
-    // file << "contour(XX, YY, ZZ, 100);\n";
-    // file << "colormap('viridis');\n";
-    // file << "colorbar;\n";
-    // file << "hold on;\n";
-    // file << "plot(" << x_opt << ", " << y_opt << ", 'ro', 'MarkerSize', 10, 'LineWidth', 2);\n";
-    // file << "xlabel('x'); ylabel('y'); title('Rosenbrock Contour');\n";
-    // file << "grid on;\n";
-    // file.close();
+    // make_matlab_script();
 
     return 0;
 }
@@ -93,4 +74,21 @@ void save_matlab_data(const casadi::DM& XX, const casadi::DM& YY, const casadi::
   save_dm(yopt_dm, "y_opt");
 
   Mat_Close(matfp);
+}
+
+void make_matlab_script( ) {
+  std::ofstream file("../mfiles/rosenbrock_result.m");
+  file << "% Rosenbrock contour plot" << std::endl;
+  file << "% Load precomputed data from CasADi C++ output" << std::endl;
+  file << "load('rosenbrock_data.mat');  % Loads XX, YY, ZZ, x_opt, y_opt" << std::endl;
+
+  file << "figure;" << std::endl;
+  file << "contour(XX, YY, ZZ, 100);" << std::endl;
+  file << "colormap('parula');" << std::endl;
+  file << "colorbar;" << std::endl;
+  file << "hold on;" << std::endl;
+  file << "plot(x_opt, y_opt, 'ro', 'MarkerSize', 10, 'LineWidth', 2);" << std::endl;
+  file << "xlabel('x'); ylabel('y'); title('Rosenbrock Contour');" << std::endl;
+  file << "grid on;" << std::endl;
+  file.close();
 }

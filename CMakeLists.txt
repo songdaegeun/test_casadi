@@ -4,7 +4,6 @@ set(CMAKE_CXX_STANDARD 17)
 
 project(casadi_optimization)
 
-
 find_package(PkgConfig REQUIRED)
 link_directories(/usr/lib/x86_64-linux-gnu/hdf5/serial)
 
