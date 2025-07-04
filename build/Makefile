@@ -123,32 +123,32 @@ optimizer/fast:
 	$(MAKE) -f CMakeFiles/optimizer.dir/build.make CMakeFiles/optimizer.dir/build
 .PHONY : optimizer/fast
 
-casadi_api_a_test/casadi_api_a_test.o: casadi_api_a_test/casadi_api_a_test.cpp.o
+3_rosenbrock.o: 3_rosenbrock.cpp.o
 
-.PHONY : casadi_api_a_test/casadi_api_a_test.o
+.PHONY : 3_rosenbrock.o
 
 # target to build an object file
-casadi_api_a_test/casadi_api_a_test.cpp.o:
-	$(MAKE) -f CMakeFiles/optimizer.dir/build.make CMakeFiles/optimizer.dir/casadi_api_a_test/casadi_api_a_test.cpp.o
-.PHONY : casadi_api_a_test/casadi_api_a_test.cpp.o
+3_rosenbrock.cpp.o:
+	$(MAKE) -f CMakeFiles/optimizer.dir/build.make CMakeFiles/optimizer.dir/3_rosenbrock.cpp.o
+.PHONY : 3_rosenbrock.cpp.o
 
-casadi_api_a_test/casadi_api_a_test.i: casadi_api_a_test/casadi_api_a_test.cpp.i
+3_rosenbrock.i: 3_rosenbrock.cpp.i
 
-.PHONY : casadi_api_a_test/casadi_api_a_test.i
+.PHONY : 3_rosenbrock.i
 
 # target to preprocess a source file
-casadi_api_a_test/casadi_api_a_test.cpp.i:
-	$(MAKE) -f CMakeFiles/optimizer.dir/build.make CMakeFiles/optimizer.dir/casadi_api_a_test/casadi_api_a_test.cpp.i
-.PHONY : casadi_api_a_test/casadi_api_a_test.cpp.i
+3_rosenbrock.cpp.i:
+	$(MAKE) -f CMakeFiles/optimizer.dir/build.make CMakeFiles/optimizer.dir/3_rosenbrock.cpp.i
+.PHONY : 3_rosenbrock.cpp.i
 
-casadi_api_a_test/casadi_api_a_test.s: casadi_api_a_test/casadi_api_a_test.cpp.s
+3_rosenbrock.s: 3_rosenbrock.cpp.s
 
-.PHONY : casadi_api_a_test/casadi_api_a_test.s
+.PHONY : 3_rosenbrock.s
 
 # target to generate assembly for a file
-casadi_api_a_test/casadi_api_a_test.cpp.s:
-	$(MAKE) -f CMakeFiles/optimizer.dir/build.make CMakeFiles/optimizer.dir/casadi_api_a_test/casadi_api_a_test.cpp.s
-.PHONY : casadi_api_a_test/casadi_api_a_test.cpp.s
+3_rosenbrock.cpp.s:
+	$(MAKE) -f CMakeFiles/optimizer.dir/build.make CMakeFiles/optimizer.dir/3_rosenbrock.cpp.s
+.PHONY : 3_rosenbrock.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... optimizer"
-	@echo "... casadi_api_a_test/casadi_api_a_test.o"
-	@echo "... casadi_api_a_test/casadi_api_a_test.i"
-	@echo "... casadi_api_a_test/casadi_api_a_test.s"
+	@echo "... 3_rosenbrock.o"
+	@echo "... 3_rosenbrock.i"
+	@echo "... 3_rosenbrock.s"
 .PHONY : help
 
 

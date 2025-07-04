@@ -1,5 +1,4 @@
 // Rosenbrock problem: https://web.casadi.org/blog/opti/
-// opti: https://github.com/casadi/casadi/blob/develop/docs/examples/cplusplus/race_car.cpp
 
 #include "rosenbrock.h"
 
@@ -130,8 +129,6 @@ void save_constraint_2() {
 
   Mat_Close(matfp);
 }
-
-
 
 void save_optimal_solution( double x_opt, double y_opt) {
   mat_t* matfp = Mat_CreateVer("../mfiles/mat/rosenbrock_optimal_solution.mat", NULL, MAT_FT_MAT5);
