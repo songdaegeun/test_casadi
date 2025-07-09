@@ -15,8 +15,8 @@ for h = 1:num_horizon
     ylabel('Cost');
 end
 
-for t = 1:length(data)
-%for t = 5:5
+%for t = 1:length(data)
+for t = 121:
     time_step = data(t).time_step;
     horizon_steps = data(t).horizon_steps;
 
